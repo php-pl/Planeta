@@ -1,0 +1,7 @@
+TRUNCATE TABLE blog;
+
+TRUNCATE TABLE tag;
+
+TRUNCATE TABLE post;
+
+TRUNCATE TABLE post_tag;

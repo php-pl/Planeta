@@ -1,0 +1,5 @@
+refresh:
+  is_secure: yes
+  
+delete:
+  is_secure: yes

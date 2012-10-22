@@ -1,0 +1,7 @@
+all:
+  loginapi:
+    login: foo
+    key: bar
+  content:
+    max_br: 25 
+    max_p: 10

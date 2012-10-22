@@ -1,0 +1,19 @@
+loginSuccess:
+  metas:
+    title: Planeta PHP.pl - Logowanie
+    
+tagSuccess:
+  metas:
+    title: Planeta PHP.pl - Zgłaszanie nowego tagu
+    
+indexSuccess:
+  metas:
+    title: Planeta PHP.pl - Zarządzanie blogiem
+    
+indexNotApproved:
+  metas:
+    title: Planeta PHP.pl - Zarządzanie blogiem
+
+editSuccess:
+  metas:
+    title: Planeta PHP.pl - Edycja informacji o blogu

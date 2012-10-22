@@ -1,0 +1,12 @@
+INSERT INTO tag VALUES(NULL, 'apache', 1);
+INSERT INTO tag VALUES(NULL, 'css', 1);
+INSERT INTO tag VALUES(NULL, 'design', 1);
+INSERT INTO tag VALUES(NULL, 'framework', 1);
+INSERT INTO tag VALUES(NULL, 'google', 1);
+INSERT INTO tag VALUES(NULL, 'internet', 1);
+INSERT INTO tag VALUES(NULL, 'mojavi4', 1);
+INSERT INTO tag VALUES(NULL, 'mvc', 1);
+INSERT INTO tag VALUES(NULL, 'php', 1);
+INSERT INTO tag VALUES(NULL, 'php.pl', 1);
+INSERT INTO tag VALUES(NULL, 'php6', 1);
+INSERT INTO tag VALUES(NULL, 'technologie', 1);

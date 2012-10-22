@@ -1,0 +1,23 @@
+# default rules
+login:
+  url: /login
+  param: { module: default, action: login }
+  
+logout:
+  url: /logout
+  param: { module: default, action: logout }
+
+homepage:
+  url:   /
+  param: { module: default, action: index }
+
+default_symfony:
+  url:   /symfony/:action/*
+  param: { module: default }
+
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

@@ -1,0 +1,28 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Tag
+    theme:            default
+    
+    fields:
+      name: { name: Nazwa }
+      approved: { name: Zatwierdzony? }
+
+    list:
+      title: Lista tagów
+      actions:
+        _create: { name: Dodaj }
+      object_actions:
+        _edit: -
+        _delete: -
+        toggleApproved:   { name: Zatwierdź / Cofnij zatwierdzenie, action: toggleApproved, icon: tick.png }
+      display: [id, =name, approved]
+      filters: [name, approved]
+      
+    edit:
+      title: Edycja tagu %%name%%
+      actions: 
+        _save: { name: Zapisz }
+        _list: { name: Powrót }
+        
+

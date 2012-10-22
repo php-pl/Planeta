@@ -1,0 +1,10 @@
+listSuccess:
+  metas:
+    title: Lista blogów - Administracja - Planeta PHP.pl
+    
+editSuccess:
+  metas:
+    title: Edycja bloga - Administracja - Planeta PHP.pl
+    
+rejectSuccess:
+  stylesheets: [/sf/sf_admin/css/main.css]

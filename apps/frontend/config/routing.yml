@@ -1,0 +1,62 @@
+login:
+  url: /logowanie
+  param: { module: ucp, action: login }
+  
+logout:
+  url: /wyloguj
+  param: { module: ucp, action: logout }
+
+manage:
+  url: /zarzadzaj/:action
+  param: { module: ucp, action: index }
+
+tags:
+  url: /tag/:name/:page
+  param: { module: post, action: list, type: tags, page: 1 }
+  
+archives:
+  url: /archiwa/:year/:month/:page
+  param: { module: post, action: list, type: archives, page: 1  }
+
+feeds:
+  url: /feed/:tag
+  param: { module: feed, action: index }
+  
+feed:
+  url: /feed/*
+  param: { module: feed, action: index }
+
+add:
+  url: /dodaj
+  param: { module: blog, action: add }
+
+verification:
+  url: /weryfikacja/:file
+  param: { module: blog, action: verify }
+
+about: 
+  url: /o_planecie
+  param: { module: default, action: about }
+  
+contact:
+  url: /kontakt
+  param: { module: default, action: contact }
+
+posts:
+  url: /strona/:page
+  param: { module: post, action: list, type: all } 
+
+homepage:
+  url:   /
+  param: { module: post, action: list, type: all, page: 1 }
+
+default_symfony:
+  url:   /symfony/:action/*
+  param: { module: default }
+
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

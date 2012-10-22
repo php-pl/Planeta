@@ -1,0 +1,3 @@
+<?php include_partial('global/page_header', array('title' => 'Zarządzanie blogiem')) ?>
+<p>Twój blog <?php echo link_to($blog->getName(), $blog->getUrl()) ?> nie został jeszcze zaakceptowany przez administratorów. O akceptacji (lub jej braku) zostaniesz powiadomiony wiadomością email, wysłaną na konto użyte do rejestracji na <?php echo link_to('Forum PHP.pl', 'http://forum.php.pl') ?> - <?php echo $blog->getEmail() ?>. Do tego czasu wszystkie opcje panelu pozostaną zablokowane.</p>  
+<?php include_partial('global/page_footer') ?>

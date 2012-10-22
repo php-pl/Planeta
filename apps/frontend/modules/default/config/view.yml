@@ -1,0 +1,11 @@
+aboutSuccess:
+  metas:
+    title: Planeta PHP.pl - O planecie
+    
+contactSuccess:
+  metas:
+    title: Planeta PHP.pl - Kontakt
+    
+error404Success:
+  metas:
+    title: Planeta PHP.pl - Błąd 404

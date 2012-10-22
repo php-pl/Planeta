@@ -1,0 +1,41 @@
+fillin:
+  enabled: true
+
+fields:
+  name:
+    required:
+      msg: Podaj nazwę bloga
+    sfStringValidator:
+      min:       2
+      min_error: Nazwa musi mieć mimimum dwa znaki
+      max:       64
+      max_error: Nazwa może mieć maksymalnie 64 znaki
+      
+  author:
+    required:
+      msg: Podaj imię / pseudonim autora
+    sfStringValidator:
+      min:       2
+      min_error: Nazwa musi mieć mimimum dwa znaki
+      max:       64
+      max_error: Nazwa może mieć maksymalnie 64 znaki
+      
+  url:
+    required:
+      msg: Podaj adres bloga
+    sfStringValidator:
+      max:       128
+      max_error: Adres blogu może mieć maksymalnie 128 znaków
+    sfUrlValidator:
+      url_error: Nieprawidłowy format adresu
+
+  feed:
+    required:
+      msg: Podaj adres kanału RSS
+    sfStringValidator:
+      max:       128
+      max_error: Adres kanału RSS może mieć maksymalnie 128 znaków
+    sfUrlValidator:
+      url_error: Nieprawidłowy format adresu
+
+     

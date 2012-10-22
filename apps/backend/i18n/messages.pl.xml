@@ -1,0 +1,119 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file orginal="global" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="1">
+        <source>create</source>
+        <target>Dodaj</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>edit</source>
+        <target>Edytuj</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Actions</source>
+        <target>Akcje</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>[0] no result|[1] 1 result|(1,+Inf] %1% results</source>
+        <target>[0] brak wyników|[1] 1 wynik|(1,+Inf] Wyników: %1%</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>list</source>
+        <target>Lista</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>save</source>
+        <target>Zapisz</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>save and add</source>
+        <target>Zapisz i dodaj</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>delete</source>
+        <target>Usuń</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Your modifications have been saved</source>
+        <target>Zmiany zostały zapisane</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>Are you sure?</source>
+        <target>Jesteś pewny?</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>Associated</source>
+        <target>Przyznane</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>Unassociated</source>
+        <target>Nieprzyznane</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>There are some errors that prevent the form to validate</source>
+        <target>Formularz nie został wysłany, ponieważ wystąpiły następujące błędy:</target>
+      </trans-unit>      ~
+      <trans-unit id="13">
+        <source>save and list</source>
+        <target>Zapisz i wróć do listy</target>
+      </trans-unit>  
+      <trans-unit id="14">
+        <source>Required</source>
+        <target>Pole obowiązkowe</target>
+      </trans-unit> 
+      <trans-unit id="15">
+        <source>no result</source>
+        <target>brak wyników</target>
+      </trans-unit>  
+      <trans-unit id="16">
+        <source>filters</source>
+        <target>Filtrowanie wyników</target>
+      </trans-unit>  
+      <trans-unit id="17">
+        <source>reset</source>
+        <target>Wyświetl wszystkie</target>
+      </trans-unit>  
+      <trans-unit id="18">
+        <source>filter</source>
+        <target>Filtruj</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>asc</source>
+        <target>rosnąco</target>
+      </trans-unit>  
+      <trans-unit id="20">
+        <source>desc</source>
+        <target>malejąco</target>
+      </trans-unit>  
+      <trans-unit id="21">
+        <source>yes or no</source>
+        <target>obojętnie</target>
+      </trans-unit>  
+      <trans-unit id="22">
+        <source>yes</source>
+        <target>tak</target>
+      </trans-unit>  
+      <trans-unit id="23">
+        <source>no</source>
+        <target>nie</target>
+      </trans-unit>  
+      <trans-unit id="24">
+        <source>Previous</source>
+        <target>Poprzednia</target>
+      </trans-unit>  
+      <trans-unit id="25">
+        <source>Next</source>
+        <target>Następna</target>
+      </trans-unit>  
+      <trans-unit id="26">
+        <source>Last</source>
+        <target>Ostatnia</target>
+      </trans-unit>  
+      <trans-unit id="27">
+        <source>First</source>
+        <target>Pierwsza</target>
+      </trans-unit>  
+    </body>
+  </file>
+</xliff>

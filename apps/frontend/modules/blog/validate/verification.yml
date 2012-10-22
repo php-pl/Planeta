@@ -1,0 +1,22 @@
+methods:
+  post: [login, password]
+
+names:
+  login:
+    required:     true
+    required_msg: Podaj login
+    validators:   verificationValidator
+
+  password:
+    required:     true
+    required_msg: Podaj hasło
+    
+verificationValidator:
+  class: myVerificationValidator
+  param:
+    password: password
+    login_error: Nieprawidłowy login
+    password_error: Nieprawidłowe hasło
+    inactive_error: Twoje konto na forum jest nieaktywne
+    unknown_error: Nieznany błąd
+

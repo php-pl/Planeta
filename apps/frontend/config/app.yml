@@ -1,0 +1,7 @@
+all:
+  content:
+    posts_in_feed: 10
+    posts_per_page: 5
+    
+  menu:
+    max_archives_links: 5

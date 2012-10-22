@@ -1,0 +1,38 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Blog
+    theme:            default
+    
+    fields:
+      mid: { name: ID usera }
+      name: { name: Nazwa }
+      url: { name: Adres }
+      feed: { name: Adres feeda }
+      author: { name: Autor }
+      email: { name: E-mail autora }
+      verified: { name: Zweryfikowany? }
+      approved: { name: Zatwierdzony? }
+      
+    list:
+      title: Lista blogów
+      display: [=name, _url, _feed, _author, verified, approved]
+      fields:
+        verified: { name: Zwer. }
+        approved: { name: Zatw. }
+      sort: name
+      object_actions:
+        _edit: -
+        _delete: -
+        approve:   { name: Zatwierdź, action: approve }
+        reject:    { name: Odrzuć, action: reject }
+      actions: [-*]
+      filters: [verified, approved]
+      
+    edit: 
+      title: Edycja bloga %%name%%
+      display: [mid, name, url, feed, author, email, verified, approved]
+      actions: 
+        _save: { name: Zapisz }
+        _list: { name: Powrót }
+      

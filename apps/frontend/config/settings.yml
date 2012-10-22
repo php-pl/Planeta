@@ -1,0 +1,30 @@
+prod:
+  .settings:
+    no_script_name:           on
+
+dev:
+  .settings:
+    error_reporting:        4095
+    web_debug:              on
+    cache:                  off
+    no_script_name:         off
+    etag:                   off
+
+test:
+  .settings:
+    error_reporting:        2047
+    cache:                  off
+    web_debug:              off
+    no_script_name:         off
+    etag:                   off
+
+all:
+  .settings:
+    login_module:           ucp
+    login_action:           login
+  
+    validation_error_prefix: off
+    validation_error_suffix: off
+    validation_error_class: error
+    
+    enabled_modules: [default, sfFeed2]

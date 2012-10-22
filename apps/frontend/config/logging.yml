@@ -1,0 +1,5 @@
+prod:
+  enabled: off
+  level:   err
+  rotate:  on
+  purge:   off

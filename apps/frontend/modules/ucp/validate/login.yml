@@ -1,0 +1,24 @@
+methods:
+  post: [login, password]
+
+names:
+  login:
+    required:     true
+    required_msg: Podaj login
+    validators:   loginValidator
+
+  password:
+    required:     true
+    required_msg: Podaj hasło
+    
+loginValidator:
+  class: myLoginValidator
+  param:
+    password: password
+    login_error: Nieprawidłowy login
+    password_error: Nieprawidłowe hasło
+    no_blog_error: Nie posiadasz bloga dodanego do planety lub pomimo zatwierdzenia, nie został on zweryfikowany
+    not_verified_error: Blog nie przeszedł procesu weryfikacji
+    inactive_error: Twoje konto na forum jest nieaktywne
+    unknown_error: Nieznany błąd
+

@@ -1,0 +1,39 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Post
+    theme:            default
+
+    fields:
+      title:        { name: Tytuł }
+      created_at:   { name: Opublikowany }
+      shortened:    { name: Skrócony? }
+      deleted:      { name: Usunięty? }
+      link:         { name: Link do wpisu }
+      content:      { name: Treść }
+      content_more: { name: Reszta treści }
+        
+    list:
+      title: Lista wpisów
+      display:        [=title, _blog, created_at, _link]
+      sort: [created_at, desc]
+      peer_method: doSelectJoinBlog
+      object_actions:
+        _edit: -
+        _delete: -
+      actions: {}
+      fields:
+        created_at: { name: Opublikowany, params: date_format='dd.MM.yyyy HH:mm:ss' }
+      filters: [title, created_at, shortened]
+
+    edit:
+      title: Edycja wpisu %%title%%
+      fields:
+        post_tag: { name: Tagi, type: admin_check_list, params: through_class=PostTag }
+        content: { params: size=120x10 }
+        content_more: { params: size=120x20 }
+      display: [title, blog_id, created_at, content, content_more, shortened, post_tag]
+      actions: 
+        _save: { name: Zapisz }
+        _list: { name: Powrót }
+        

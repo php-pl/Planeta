@@ -1,0 +1,9 @@
+fillin:
+  enabled: true
+
+fields:
+  name:
+    required:
+      msg: Podaj nazwę kategorii
+
+    

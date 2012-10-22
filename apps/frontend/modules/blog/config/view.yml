@@ -1,0 +1,19 @@
+addSuccess:
+  metas:
+    title: Planeta PHP.pl - Dodaj blog
+    
+addDone:
+  metas:
+    title: Planeta PHP.pl - Blog dodany
+    
+verificationSuccess:
+  metas:
+    title: Planeta PHP.pl - Weryfikacja
+    
+verificationDone:
+  metas:
+    title: Planeta PHP.pl - Weryfikacja zakończona
+    
+verifyError:
+  metas:
+    title: Planeta PHP.pl - Weryfikacja niepowiodła się

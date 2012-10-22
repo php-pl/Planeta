@@ -1,0 +1,15 @@
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        Administracja - Planeta PHP.pl
+    robots:       noindex, nofollow
+    language:     pl
+
+  stylesheets:    [backend]
+
+  javascripts:    []
+
+  has_layout:     on
+  layout:         layout

@@ -1,0 +1,1 @@
+<?php echo link_to($post->getBlog()->getName(), 'blog/edit?id=' . $post->getBlog()->getId()) ?>

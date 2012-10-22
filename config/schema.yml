@@ -1,0 +1,43 @@
+propel:
+  post:
+    id:
+    blog_id: { type: integer, foreignTable: blog, foreignReference: id, onDelete: cascade }
+    created_at:
+    year: { type: integer, index: true }
+    month: { type: integer, index: true }
+    title: varchar(255)
+    link: { type: varchar(255), index: true }
+    content: longvarchar
+    content_more: longvarchar
+    shortened: boolean
+    deleted: { type: boolean, default: false }
+
+  blog:
+    id:
+    mid: { type: integer, index: true }
+    name: { type: varchar(64), index: unique }
+    url: { type: varchar(128), index: unique }
+    feed: { type: varchar(128), index: unique }
+    author: { type: varchar(64) }
+    email: { type: varchar(128) }
+    file: { type: varchar(16) }
+    verified: { type: boolean, default: 0 }
+    approved: { type: boolean, default: 0 }
+    
+  tag:
+    id: 
+    name: { type: varchar(16), index: true }
+    approved: { type: boolean, default: 0 }
+
+  post_tag:
+    id:
+    post_id: { type: integer, foreignTable: post, foreignReference: id, onDelete: cascade }
+    tag_id: { type: integer, foreignTable: tag, foreignReference: id, onDelete: cascade }
+    
+  reader:
+    date: { type: date, required: true, primaryKey: true, autoIncrement: false }
+    cnt: { type: integer, default: 0 }
+    
+  admin:
+    mid: { type: integer, required: true, primaryKey: true }
+    email: { type: varchar(128), index: true }

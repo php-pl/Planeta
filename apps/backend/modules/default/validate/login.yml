@@ -1,0 +1,20 @@
+methods:
+  post: [login, password]
+
+names:
+  login:
+    required:     true
+    required_msg: Podaj login
+    validators:   loginValidator
+
+  password:
+    required:     true
+    required_msg: Podaj hasło
+    
+loginValidator:
+  class: myLoginValidator
+  param:
+    password: password
+    login_error: Nieprawidłowy login lub hasło
+    unknown_error: Nieznany błąd
+

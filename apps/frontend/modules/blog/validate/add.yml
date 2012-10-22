@@ -1,0 +1,59 @@
+fillin:
+  enabled: true
+
+fields:
+  login:
+    required:
+      msg: Podaj login
+    myVerificationValidator:
+      password: password
+      login_error: Nieprawidłowy login
+      password_error: Nieprawidłowe hasło
+      inactive_error: Twoje konto na forum jest nieaktywne
+      unknown_error: Nieznany błąd
+    myOneBlogPerAccountValidator:
+      msg: Już zarejestrowałeś jeden blog z tego konta.
+
+  password:
+    required:
+      msg: Podaj hasło
+    
+  name:
+    required:
+      msg: Podaj nazwę bloga
+    sfStringValidator:
+      min:       2
+      min_error: Nazwa bloga musi mieć mimimum dwa znaki
+      max:       64
+      max_error: Nazwa bloga może mieć maksymalnie 64 znaki 
+      
+  author:
+    required:
+      msg:       Podaj swoje imię lub nick
+    sfStringValidator:
+      min:       2
+      min_error: Długość imienia musi miec mimimum dwa znaki
+      max:       64
+      max_error: Długość imienia może mieć maksymalnie 64 znaki
+ 
+  url:
+    required:
+      msg: Podaj adres bloga
+    sfStringValidator:
+      max:       128
+      max_error: Adres bloga może mieć maksymalnie 128 znaków
+    sfUrlValidator:
+      url_error: Nieprawidłowy format adresu
+    sfPropelUniqueValidator:
+      class:        Blog
+      column:       url
+      unique_error: Blog o tym adresie został już wcześniej dodany
+
+  feed:
+    required:
+      msg: Podaj adres kanału RSS
+    sfStringValidator:
+      max:       128
+      max_error: Adres kanału RSS może mieć maksymalnie 128 znaków
+    sfUrlValidator:
+      url_error: Nieprawidłowy format adresu
