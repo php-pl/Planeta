@@ -1,12 +1,13 @@
 prod:
   .settings:
-    no_script_name:           on
+    no_script_name:         on
+    cache:                  on
 
 dev:
   .settings:
     error_reporting:        4095
     web_debug:              on
-    cache:                  off
+    cache:                  on
     no_script_name:         off
     etag:                   off
 
@@ -20,6 +21,7 @@ test:
 
 all:
   .settings:
+    cache:                  on
     login_module:           ucp
     login_action:           login
   

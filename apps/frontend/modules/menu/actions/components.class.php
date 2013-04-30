@@ -24,7 +24,7 @@ class menuComponents extends sfComponents {
             if (is_array($links)) {
                 file_put_contents($tmp, $data);
             } else {
-                throw new Exception('Nie udało się pobrać pliku z danymi do menu, a plik tymczasowy nieistnieje.');
+                throw new Exception('Nie udało się pobrać pliku z danymi do menu, a plik tymczasowy nie istnieje.');
             }
         }
         

@@ -31,16 +31,16 @@
 </div>
 
 <div id="infobar">Wszystkie wpisy należą do ich twórców. PHP.pl nie ponosi odpowiedzialności za treść wpisów.</div>
-<div id="footer">Copyright (c) 2003-2006 php.pl&nbsp;&nbsp;&nbsp;&nbsp;Wszystkie prawa zastrzeżone</div>
+<div id="footer">Copyright (c) 2003-<?php echo date('Y');?> php.pl&nbsp;&nbsp;&nbsp;&nbsp;Wszystkie prawa zastrzeżone</div>
 </div>
 <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 </script>
 <script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-256753-9");
-pageTracker._trackPageview();
-} catch(err) {}</script>
+	try {
+		var pageTracker = _gat._getTracker("UA-256753-9");
+		pageTracker._trackPageview();
+	} catch(err) {}</script>
 </body>
 </html>

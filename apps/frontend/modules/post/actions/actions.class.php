@@ -101,6 +101,10 @@ class postActions extends sfActions {
         $c = new Criteria();
         $c->add(TagPeer::NAME, $this->getRequestParameter('name'));
         $tag = TagPeer::doSelectOne($c);
+
+		if( !$tag ){
+			$this->forward404();
+		}
         
         $this->getResponse()->setTitle(sprintf('Planeta PHP.pl - Wpisy dla tagu: %s', $tag->getName()));
         
