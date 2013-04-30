@@ -8,9 +8,9 @@ class feedActions extends sfActions {
         if ($name) {
             $c->add(TagPeer::NAME, $name);
             $tag = TagPeer::doSelectOne($c);
-             
+
             $this->forward404Unless($tag);
-             
+
             $c->clear();
             $c->addJoin(PostTagPeer::POST_ID, PostPeer::ID, Criteria::LEFT_JOIN);
             $c->add(PostTagPeer::TAG_ID, $tag->getId());
@@ -51,4 +51,5 @@ class feedActions extends sfActions {
 
         return $feed;
     }
+
 }

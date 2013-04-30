@@ -21,9 +21,9 @@ archives:
 feeds:
   url: /feed/:tag
   param: { module: feed, action: index }
-  
+
 feed:
-  url: /feed/*
+  url: /feed
   param: { module: feed, action: index }
 
 add:
